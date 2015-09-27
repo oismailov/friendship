@@ -64,7 +64,7 @@ $ tree src/Acme/FriendshipBundle/ - bundle(plugin) for managing relationships
 
 │   └── UserRepository.php
 
-├── 
+├── Helper
 
 │   ├── JsonHelper.php
 
