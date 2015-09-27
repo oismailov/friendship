@@ -1,0 +1,8 @@
+acme_friendship:
+    resource: "@AcmeFriendshipBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
