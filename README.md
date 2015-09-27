@@ -7,9 +7,13 @@ Technologies
 -----------------
 
 PHP framework symfony 2.7.5
+
 MySQL Server 5.6.19
+
 Doctrine ORM 2.4.8
+
 PHPUnit 4.6.6
+
 Composer
 
 Preparation
@@ -31,32 +35,59 @@ Structure
 $ tree src/Acme/FriendshipBundle/ - bundle(plugin) for managing relationships
 
 ├── AcmeFriendshipBundle.php
+
 ├── Controller
+
 │   ├── ExceptionController.php
+
 │   ├── RelationshipController.php
+
 │   └── UserController.php
+
 ├── DependencyInjection
+
 │   ├── AcmeFriendshipExtension.php
+
 │   └── Configuration.php
+
 ├── Entity
+
 │   ├── Relationship.php
+
 │   ├── Relationship.php~
+
 │   ├── RelationshipRepository.php
+
 │   ├── User.php
+
 │   ├── User.php~
+
 │   └── UserRepository.php
-├── Helper
+
+├── 
+
 │   ├── JsonHelper.php
+
 │   └── Validation.php
+
 ├── Resources
+
 │   ├── config
+
 │   │   └── services.xml
+
 │   └── views
+
 └── Tests
+
     └── Controller
+
         ├── RelationshipControllerCreateActionTest.php
+
         ├── RelationshipControllerDeleteActionTest.php
+
         ├── RelationshipControllerShowActionTest.php
+
         └── UserControllerTest.php
 
 
@@ -73,19 +104,19 @@ Tests are located in Tests/Controller directory.
 Configuration - app/config
 
 
-API
+API. How To Use
 -----------------
 
 Create relationship: POST /relationship/new 
+-----------------
 
 parameters: user_one_id, user_two_id
 
-
 Show relationship: GET /relationship/{user_id}
-
+-----------------
 
 Delete relationship: DELETE /relationship/delete/{user_id}/{user_id_2}
-
+-----------------
 
 Show user: GET /user/{user_id}
 
