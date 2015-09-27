@@ -107,18 +107,23 @@ Configuration - app/config
 API. How To Use
 -----------------
 
-Create relationship: POST /relationship/new 
+Create relationship
 -----------------
+POST /relationship/new 
 
 parameters: user_one_id, user_two_id
 
-Show relationship: GET /relationship/{user_id}
+Show relationship
 -----------------
+GET /relationship/{user_id}
 
-Delete relationship: DELETE /relationship/delete/{user_id}/{user_id_2}
+Delete relationship
 -----------------
+DELETE /relationship/delete/{user_id}/{user_id_2}
 
-Show user: GET /user/{user_id}
+Show user
+-----------------
+GET /user/{user_id}
 
 Tests Running
 ----------------
