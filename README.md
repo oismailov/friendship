@@ -27,6 +27,7 @@ $ php app/console doctrine:schema:update --force  - create DB Tables/Schema
 
 $ composer update - download/update all needed packages from composer.json
 
+$ php app/console ser:run - run project on local machine
 
 
 Structure
